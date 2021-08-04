@@ -36,7 +36,7 @@ Note: if you need to change the directory, change the acroread.yml on the line c
 ## Extra notes
 - I commented the "delete_blacklisted" line on a regular pkg2appimage bash script, therefore I included it in this repo the pkg2appimage bash script that I changed. So that appimage won't delete the basic library acroread needed when compiling
 - Copied libraries that needed by acroread from OpenSuSE Leap 42.3
-- Changed the acroread bash script line 50 and line 560 so the program will use the correct library directory and file (see msohni's comment on https://gist.github.com/cho2/79964a49a4f5f545853d3ebdfd1efe73)
+- Changed the acroread bash script line 50 and line 560 so the program will use the correct library directory and file (see https://gist.github.com/cho2/79964a49a4f5f545853d3ebdfd1efe73#gistcomment-2932886)
 
 ## TODO
 - Integrate missing libraries and fix wrong libraries loaded, so the prerequisite above can be removed
