@@ -1,0 +1,34 @@
+app: Acroread
+
+ingredients:
+  dist: bionic
+
+script:
+  - cp /home/nso/appimage/acroreadsuse/COMMON.TAR /home/nso/appimage/acroreadsuse/ILINXR.TAR /home/nso/appimage/acroreadsuse/library423.tar.gz /home/nso/appimage/acroreadsuse/acroread .
+  - tar -xvpf COMMON.TAR
+  - tar -xvpf ILINXR.TAR
+  - tar -xzvf library423.tar.gz
+  - mv Adobe/Reader9/* usr/
+  - mkdir -p usr/Reader/intellinux/lib2
+  - mv library423/lib/* library423/usr/lib/* usr/Reader/intellinux/lib2/
+  - rm -rf usr/bin/acroread
+  - mv acroread usr/bin/acroread
+  - rm -rf COMMON.TAR ILINXR.TAR library423.tar.gz Adobe library423
+  - mkdir -p usr/share/applications
+  - cat > usr/share/applications/acroread.desktop <<\EOF
+  - [Desktop Entry]
+  - Name=Adobe Reader 9
+  - MimeType=application/pdf;application/vnd.fdf;application/vnd.adobe.pdx;application/vnd.adobe.xdp+xml;application/vnd.adobe.xfdf;
+  - Comment=Adobe Reader
+  - Exec=acroread
+  - Type=Application
+  - GenericName=PDF Viewer
+  - Terminal=false
+  - Icon=AdobeReader9
+  - X-KDE-StartupNotify=false
+  - Categories=Application;Office;Viewer;X-Red-Hat-Base;
+  - InitialPreference=9
+  - EOF
+  - cp usr/share/applications/acroread.desktop .
+  - cp usr/Resource/Icons/128x128/AdobeReader9.png .
+
