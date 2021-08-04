@@ -4,7 +4,7 @@ ingredients:
   dist: bionic
 
 script:
-  - cp /home/nso/appimage/acroreadsuse/COMMON.TAR /home/nso/appimage/acroreadsuse/ILINXR.TAR /home/nso/appimage/acroreadsuse/library423.tar.gz /home/nso/appimage/acroreadsuse/acroread .
+  - cp /home/user/acroreadsuse/COMMON.TAR /home/user/acroreadsuse/ILINXR.TAR /home/user/acroreadsuse/library423.tar.gz /home/user/acroreadsuse/acroread .
   - tar -xvpf COMMON.TAR
   - tar -xvpf ILINXR.TAR
   - tar -xzvf library423.tar.gz
