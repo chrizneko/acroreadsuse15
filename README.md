@@ -9,13 +9,6 @@ Source that helped and inspired me: https://gist.github.com/cho2/79964a49a4f5f54
 - Currently unable to run on OpenSuSE Leap 15.3
 - This is an in-a-rush project so may be sloppy. Any help will be appreciated
 
-## What works
-- Viewing 3D PDF
-
-## What doesn't work
-- Looks like printing doesn't work
-- Etc I don't know, TBH I researched this for the sake of viewing 3D PDF
-
 ## Prerequisite
 You need to install glibc-locale-base-32bit before running the appimage:
 ```
@@ -24,14 +17,14 @@ zypper install glibc-locale-base-32bit
 
 ## How to use
 - Fulfill the prerequisite above
-- Because of github can't handle file larger than 25MB, download the bundled appimage from my drive here --> https://drive.google.com/file/d/1bQbnmi65LBI4CkioxnakPPkAgLdAaUFq
+- Because of github can't handle file larger than 25MB, so for now I uploaded the file into my drive. Download here --> https://drive.google.com/file/d/1bQbnmi65LBI4CkioxnakPPkAgLdAaUFq
 - Right click on the downloaded AppImage file --> Properties --> Permissions --> check "Is executable" --> OK
   or you can simply chmod +x the file
 - Run it by clicking it (or by using cli). Be patient, the first time loading it is a bit slow.
 - Enjoy!
 
 ## How to compile yourself
-You can compile appimage on your own. This is my step doing it:
+You can compile appimage on your own (in case having doubt running something suspicious from me). This is my step doing it:
 - Download from latest release https://github.com/chrizneko/acroreadsuse15/releases/latest and extract it, copy the content to /home/user/acroreadsuse/
 - Download adobe reader source from http://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i486linux_enu.tar.bz2 and extract it
 - Copy the COMMON.TAR and ILINXR.TAR to /home/user/acroreadsuse/
