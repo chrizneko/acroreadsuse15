@@ -20,7 +20,7 @@ Prerequisite:
 
 How to use:
 - Fulfill the prerequisite above
-- Because of github can't handle file larger than 25MB, download the bundled appimage from my drive here --> https://drive.google.com/file/d/1bQbnmi65LBI4CkioxnakPPkAgLdAaUFq/view?usp=sharing
+- Because of github can't handle file larger than 25MB, download the bundled appimage from my drive here --> https://drive.google.com/file/d/1bQbnmi65LBI4CkioxnakPPkAgLdAaUFq
 - Right click on the downloaded AppImage file --> Properties --> Permissions --> check "Is executable" --> OK
   or you can simply chmod +x the file
 - Enjoy!
