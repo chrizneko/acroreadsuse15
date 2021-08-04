@@ -26,12 +26,13 @@ How to use:
 - Enjoy!
 
 You can compile appimage on your own. This is my step doing it:
-- Download from latest release https://github.com/chrizneko/acroreadsuse15/releases/latest and extract it
+- Download from latest release https://github.com/chrizneko/acroreadsuse15/releases/latest and extract it, copy the content to /home/user/acroreadsuse/
 - Download adobe reader source from ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i486linux_enu.tar.bz2 and extract it
-- Copy the COMMON.TAR and ILINXR.TAR to the same folder with the acroread.yml
+- Copy the COMMON.TAR and ILINXR.TAR to /home/user/acroreadsuse/
 - Cd to the acroread.yml
 - Run this: bash -ex pkg2appimageacroread acroread.yml
 - Your appimage will be on out folder
+Note: if you need to change the directory, change the acroread.yml on the line contains "/home/user/acroreadsuse/" into your liking
 
 TODO:
 - Integrate missing libraries and wrong libraries loaded, so the prerequisite above can be removed
