@@ -27,7 +27,7 @@ zypper install glibc-locale-base-32bit
 You can compile appimage on your own (in case having doubt running something suspicious from me). This is my step doing it:
 - Download from latest release https://github.com/chrizneko/acroreadsuse15/releases/latest and extract it, copy the content to /home/user/acroreadsuse/
 - Download adobe reader source from http://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i486linux_enu.tar.bz2 and extract it
-- Copy the COMMON.TAR and ILINXR.TAR in the adobe readser source directory to /home/user/acroreadsuse/
+- Copy the COMMON.TAR and ILINXR.TAR in the adobe reader source directory to /home/user/acroreadsuse/
 - Cd to the that directory (/home/user/acroreadsuse)
 - Run this: bash -ex pkg2appimageacroread acroread.yml
 - Your appimage will be in the folder /home/user/acroreadsuse/out
